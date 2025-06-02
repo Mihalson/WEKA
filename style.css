@@ -1,0 +1,279 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*gap: 20px;*/
+    /* mezera */
+    justify-items: center;
+    color: black;
+    /* Barva textu */
+   background-color: #ebebeb;
+     background-image: url("pozadi2.jpg");
+    background-repeat: repeat; 
+    opacity: 50;
+    /* Barva pozadí */
+  }
+  
+  
+  
+  /* Kontejner pro pole1 a pole2, který bude mít 2 sloupce */
+  .grid-poles {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    /* Dva sloupce, každý 500px */
+  }
+  
+  #pole1 {
+    height: 300px;
+    width: 450px;
+    background-color: #f5faf7;
+    border: 1px solid black;
+    /* Odeber tyto řádky, pokud nechceš flexbox pro vnitřní uspořádání: */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: steelblue;
+    /* Volitelně můžeš přidat padding pro odsazení textu od okrajů */
+    padding: 10px;
+    box-sizing: border-box;
+    /* Zajišťuje, že padding nezvětší celkovou šířku/výšku */
+    text-align: left;
+    /* Pokud chceš text zarovnat doleva */
+  }
+  
+  #pole2 {
+    height: 300px;
+    width: 450px;
+    background-color: #f5faf7;
+    border: 1px solid black;
+    /* Odeber tyto řádky, pokud nechceš flexbox pro vnitřní uspořádání: */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    color: steelblue;
+    /* Volitelně můžeš přidat padding pro odsazení textu od okrajů */
+    padding: 10px;
+    box-sizing: border-box;
+    /* Zajišťuje, že padding nezvětší celkovou šířku/výšku */
+    text-align: center;
+    /* Pokud chceš text zarovnat doleva */
+  }
+  
+  
+ 
+  
+ 
+  
+  .sloupec-pravy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+  
+  
+  
+  #map {
+    height: 900px;
+    width: 900px;
+    /* background-color: lightgreen;*/
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: darkgreen;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: #e0f2f191;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .button {
+    background-color: #fff6a1;
+    border: none;
+    width: 100px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+  }
+  
+  .button:hover {
+    background-color: #97d5c7;
+  }
+  
+  .button a,
+  .button button {
+    all: unset;
+    /* Resetuje všechny výchozí styly */
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  
+  
+  input {
+    font-family: inherit;
+    font-size: 100%;
+    background: #e0f2f191;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    transition: 500ms;
+  }
+  
+  h2 {
+    color: #6a0000;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    color: #6a0000;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+  
+  h3 {
+    color: #6a0000;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  
+  h4 {
+    color: black;
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  
+  p {
+    color: #6a0000;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  
+  
+  
+  .kontejner {
+    display: flex;
+    justify-content: center;
+    /* Horizontální centrování */
+    align-items: center;
+    /* Vertikální centrování */
+  
+  }
+  
+  .kontejner img {
+    height: 60px;
+    width: 90px;
+    /* Zde už nejsou potřeba display: flex atd. */
+  }
+  
+  
+  /* Styl legendy */
+  .legend {
+    padding: 5px 5px;
+    background-color: #e0f2f191;
+    /* jemnější tyrkysová */
+    color: #333;
+    /* tmavší text pro lepší čitelnost */
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 5%;
+    /* zaoblené rohy */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* jemný stín */
+    max-width: 150px;
+    user-select: none;
+    /* zakáže náhodný výběr textu */
+  }
+  
+  /* Barevné čtverečky */
+  .legend i {
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-right: 5px;
+    font-family: sans-serif;
+    opacity: 0.85;
+    border-radius: 2px;
+    /* mírně zaoblené rohy */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ccc;
+  }
+  
+  /* Vyčištění floatu */
+  .legend::after {
+    content: "";
+    display: block;
+    clear: both;
+    font-family: sans-serif;
+  }
+  
+  .info.legend h4 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    font-family: sans-serif;
+    /* Viditelný text */
+  }
+  
+  .leaflet-control-layers {
+    background-color: rgba(255, 255, 255, 0.664) !important;
+    /* světlé poloprůhledné pozadí */
+    border-radius: 5px;
+    /* zaoblení rohů */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    /* jemný stín */
+    padding: 2px;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Styl pro jednotlivé prvky uvnitř panelu */
+  .leaflet-control-layers-base label,
+  .leaflet-control-layers-overlays label {
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  /* Styl pro zaškrtnutí (radio / checkbox) */
+  .leaflet-control-layers input {
+    margin-right: 8px;
+    font-family: sans-serif;
+  }
+  

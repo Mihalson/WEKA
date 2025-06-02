@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="OKRES.js"></script>
+    <script src="OKRES_B.js"></script>
+    <title>WEKA - zkouška</title>
+</head>
+
+<body>
+    <div class="grid-poles">
+        <div id="pole1">
+           <h1> Život v okresech ČR</h1>
+           <p>Mapová aplikece zobrazující podíl seniorů, naději dožití a věkovou strukturu obyvatelstva v okresech ČR. Zobrazovaná data pro rok 2022 (ArcČR 3.3). Vytvořena k předmětu Webová kartografie (155YWEK).</p>
+        <h3>Autor: Ondřej Mihal</h3>
+        <button onclick="zmena()">ZMĚNA</button>        
+        
+        
+    <a href="https://cs.wikipedia.org/wiki/Kraje_v_%C4%8Cesku#/media/Soubor:CoA_CZ_regions.png" target="_blank">
+        <div class="kontejner">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1280px-Flag_of_the_Czech_Republic.svg.png"
+                alt="KRAJE" class="illustration" title="KRAJE" />
+        </div>
+    </a>
+</div>
+        <div id="pole2">
+            <h2> Věkové rozdělení okresu</h2>
+            <h3> Vyber okres</h3>
+        </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-tilelayer-wmts@1.0.0/leaflet-tilelayer-wmts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
